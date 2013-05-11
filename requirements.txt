@@ -1,0 +1,5 @@
+Django==1.5
+PyMySQL==0.5
+argparse==1.2.1
+django-mysql-pymysql==0.1
+wsgiref==0.1.2

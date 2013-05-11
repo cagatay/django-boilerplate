@@ -1,0 +1,4 @@
+*pyc
+.vagrant
+.elasticbeanstalk/
+.ebextensions/aws_credentials.config
