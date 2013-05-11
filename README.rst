@@ -11,3 +11,14 @@ Setup Environement
     $ vagrant up
     $ vagrant ssh
     ({{project_name}})$ python manage.py runserver 0.0.0.0:8000
+
+==================
+Deploy to AWS
+==================
+
+::
+
+    $ mv ebextensions .ebextensions
+    $ eb init
+    $ eb start
+    $ git aws.push
