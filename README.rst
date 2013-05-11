@@ -10,5 +10,4 @@ Setup Environement
     $ cd {{project_name}}
     $ vagrant up
     $ vagrant ssh
-    ({{project_name}})$ python manage.py syncdb
     ({{project_name}})$ python manage.py runserver 0.0.0.0:8000

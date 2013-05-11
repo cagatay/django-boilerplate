@@ -80,3 +80,10 @@ exec { "create-db":
   require => Package["mysql-server"],
   logoutput => true,
 }
+
+exec { "syncdb":
+  command => "$project_venv/bin/python $project_home/manage.py syncdb --noinput",
+  user => "vagrant",
+  require => Exec["install-requirements"],
+  logoutput => true,
+}
