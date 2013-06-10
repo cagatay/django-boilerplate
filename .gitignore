@@ -2,4 +2,5 @@
 .vagrant
 .elasticbeanstalk/
 .ebextensions/aws_credentials.config
+{{project_name}}/static/
 manifests/build/
