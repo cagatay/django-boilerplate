@@ -63,19 +63,11 @@
     }
 },
 {
-    "pk": "2cl6ddb1x8fff0j91o13jgv2ofkikge4",
-    "model": "sessions.session",
-    "fields": {
-        "expire_date": "2013-05-25T19:51:07Z",
-        "session_data": "Njg3MjllYWJjOTU0MDE2MzY5ZTAxMWFhZjE2ZTUyN2RlZTk0YzE5MDqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg=="
-    }
-},
-{
     "pk": 1,
     "model": "sites.site",
     "fields": {
-        "domain": "example.com",
-        "name": "example.com"
+        "domain": "{{ project_name }}.com",
+        "name": "{{ project_name }}"
     }
 },
 {
