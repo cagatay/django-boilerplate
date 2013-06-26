@@ -1,6 +1,6 @@
 ::
 
-    $ django-admin.py startproject --template=django-boilerplate --name=.gitignore --extension=rst,pp,json {{ project_name }}
+    $ django-admin.py startproject --template=django-boilerplate --name=.gitignore --extension=rst,pp,json,config {{ project_name }}
 
 ==================
 Setup Environement
