@@ -6,5 +6,5 @@
         "domain": "{{ project_name }}.com",
         "name": "{{ project_name }}"
     }
-},
+}
 ]
