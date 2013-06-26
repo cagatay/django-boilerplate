@@ -1,9 +1,0 @@
-[submodule "manifests/modules/mysql"]
-	path = manifests/modules/mysql
-	url = git@github.com:puppetlabs/puppetlabs-mysql.git
-[submodule "manifests/modules/python"]
-	path = manifests/modules/python
-	url = git://github.com/stankevich/puppet-python.git
-[submodule "manifests/modules/stdlib"]
-	path = manifests/modules/stdlib
-	url = git@github.com:puppetlabs/puppetlabs-stdlib.git
