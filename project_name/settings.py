@@ -1,6 +1,6 @@
 import os
 
-# Django settings for {{project_name}} project.
+# Django settings for {{ project_name }} project.
 
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 rel = lambda r, p: os.path.join(r, p)
@@ -17,10 +17,10 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql_pymysql',
-        'NAME': os.environ.get('RDS_DB_NAME', '{{project_name}}'),
-        'USER': os.environ.get('RDS_USERNAME', 'root'),
-        'PASSWORD': os.environ.get('RDS_PASSWORD', ''),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get('RDS_DB_NAME', '{{ project_name }}'),
+        'USER': os.environ.get('RDS_USERNAME', 'dev'),
+        'PASSWORD': os.environ.get('RDS_PASSWORD', 'dev'),
         'HOST': os.environ.get('RDS_HOSTNAME', ''),
         'PORT': os.environ.get('RDS_PORT', ''),
     }
@@ -88,7 +88,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '3)662jrs*3=ek_#-18r1-5&amp;_(zvop6p!37^8vy737a0m#1b^d%'
+SECRET_KEY = '{{ secret_key }}'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -106,10 +106,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = '{{project_name}}.urls'
+ROOT_URLCONF = '{{ project_name }}.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = '{{project_name}}.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 TEMPLATE_DIRS = (
     rel(PROJECT_ROOT, 'templates')
